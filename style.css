@@ -1,0 +1,99 @@
+/* Apply a beautiful gradient background */
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #ff9a9e, #fad0c4);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 60px 15px;
+}
+
+/* Style the main task container */
+.container {
+  max-width: 600px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  padding: 30px;
+  transition: transform 0.3s;
+}
+
+/* App header */
+header h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Input field and add button */
+.input-group input {
+  border-radius: 10px 0 0 10px;
+  border: 1px solid #ced4da;
+}
+
+.input-group .btn {
+  border-radius: 0 10px 10px 0;
+}
+
+/* Task list */
+.list-group-item {
+  background-color: #dfcccc;
+  border: none;
+  border-bottom: 1px solid #e6d7d7;
+  transition: background 0.3s;
+}
+
+.list-group-item:hover {
+  background-color: #d8c5c5;
+}
+
+/* Completed task style */
+.completed {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+/* Buttons */
+.btn-sm {
+  transition: background 0.2s ease-in-out;
+}
+
+.btn-outline-success:hover {
+  background-color: #198754;
+  color: white;
+}
+
+.btn-danger:hover {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Filter buttons */
+.btn-group .btn.active {
+  background-color: #0d6efd;
+  color: white;
+  border-color: #0d6efd;
+}
+
+/* Task counter */
+#taskCount {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Responsive tweaks */
+@media (max-width: 576px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .container {
+    padding: 20px;
+  }
+}
